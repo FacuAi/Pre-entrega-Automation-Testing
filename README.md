@@ -40,7 +40,8 @@ pre-entrega-automation-testing-facundo-almara/
 
 ├── reports/
 
- └── reporte.html (
+ └── reporte.html 
+ 
 
 
 🧠 Casos de Prueba Implementados

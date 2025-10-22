@@ -49,45 +49,22 @@ pre-entrega-automation-testing-facundo-almara/
 
 Navega a saucedemo.com
 
-Ingresa credenciales válidas (standard_user / secret_sauce)
-
-Verifica que el login fue exitoso comprobando la URL /inventory.html y el título Products
-
-2. Verificación del Catálogo
-
-Valida el título de la página de inventario
-
-Verifica que existan productos visibles
-
-Lista nombre y precio del primer producto
-
-3. Interacción con el Carrito
-
-Agrega el primer producto al carrito
-
-Verifica que el contador del carrito se actualice
-
-Accede al carrito y valida que el producto se haya agregado correctamente
-
-📸 Evidencias y Reportes
-
-Reporte HTML: reports/reporte.html
-
-Capturas automáticas en caso de fallos: reports/FAIL_nombre_del_test.png
-
-🧾 Buenas Prácticas Aplicadas
-
-Page Object Model (POM) para separar la lógica de interacción con la UI.
-
-Esperas explícitas para sincronizar correctamente con los elementos del DOM.
-
-Fixtures de Pytest para inicializar y cerrar el navegador.
-
-Capturas automáticas en caso de error.
-
-Commits frecuentes y descriptivos.
-
-
+Instalación
+Asegúrate de tener Python 3.7 o superior instalado
+Descarga el WebDriver correspondiente a tu navegador: selenium.dev
+Clona este repositorio:
+git clone https://github.com/FacuAi/Pre-entrega-Automation-Testing
+Instala las dependencias:
+ pip install selenium pytest pytest-html
+🧠
+test_login: Verifica acceso correcto a la página de inventario.
+test_catalogo: Comprueba la presencia de productos, filtros y menú.
+test_carrito: Valida que agregar un producto al carrito funcione correctamente.
+Ejecución
+Ejecuta las pruebas con:
+pytest -v tests/test_saucedemo.py
+Para generar un reporte HTML:
+pytest tests/test_saucedemo.py -v --html=./reports/reporte.html
 💡 Autor
 
 Facundo Almara

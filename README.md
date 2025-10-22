@@ -21,17 +21,27 @@ pytest-html → generación de reportes en HTML
 📁 Estructura del Proyecto
 pre-entrega-automation-testing-facundo-almara/
 ├── README.md
+
 ├── requirements.txt
+
 ├── pytest.ini
+
 ├── tests/
+
 │ ├── test_saucedemo.py
+
 │ └── conftest.py
+
 ├── utils/
+
 │ ├── driver_factory.py
+
 │ └── pages.py
+
 ├── reports/
-│ └── reporte.html (generado automáticamente)
-└── datos/ (opcional para datos externos)
+
+ └── reporte.html (
+
 
 🧠 Casos de Prueba Implementados
 1. Login Automatizado
